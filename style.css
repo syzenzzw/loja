@@ -1,0 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#cardproduto {
+    height: 300px;
+    width: 500px;
+    border: solid;
+}
+
+#oleosintetico {
+ height: 300px;
+ width: 500px;
+}
+
