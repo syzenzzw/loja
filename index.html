@@ -6,13 +6,31 @@
     <title>Document</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 </head>
 <body>
-    <h1 id="cambioo">
-   CAMBIO 
-    </h1>
+    <div id="cabecalho1">
+
+        <h1 id="cambio">
+            Câmbio
+             </h1>
+
+             <h2 id="motor">
+                Motor
+             </h2>
+
+    </div>
+
+
+
+   <h1 id="valortotal" >
+    Total : R$
+   </h1>
+
+
   <div id="cardproduto">
-    <img id="oleosintetico" src="\Users\elton\OneDrive\Área de Trabalho\loja\img\compraroleo.jpg">
+    <img id="oleosintetico" src="img/compraroleo.jpg">
+
     <h2>
         oleo para motor sintetico
     </h2>
@@ -22,18 +40,77 @@
     </h3>
 
   </div>
-   
-
-
-
-
-
-
-
-
 
     <div id="botao">
         <input type="button" value="comprar" onclick="comprarOleo()">
     </div>
+
+    <div class="slider">
+
+        <div class="slides">
+    <input type="radio" name="radio-btn" id="radio1">
+    <input type="radio" name="radio-btn" id="radio2">
+    <input type="radio" name="radio-btn" id="radio3">
+    <input type="radio" name="radio-btn" id="radio4">
+    <input type="radio" name="radio-btn" id="radio5">
+    <input type="radio" name="radio-btn" id="radio6">
+            
+            <div class="slide first">
+                <img src="img/compraroleo.jpg" alt="imagem 1">
+            
+            </div>
+    
+                <div class="slide ">
+                <img src="img/embreagem.jpg" alt="imagem 2">
+            
+            </div>
+    
+            <div class="slide ">
+                <img src="" alt="imagem 3">
+            
+            </div>
+    
+                <div class="slide ">
+                <img src="" alt="imagem 4">
+            
+            </div>
+    
+            <div class="slide ">
+                <img src="" alt="imagem 5">
+            
+            </div>
+    
+            <div class="slide ">
+                <img src="" alt="imagem 6">
+            
+            </div>
+    
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+                <div class="auto-btn6"></div>
+        
+            </div>
+    
+        </div>
+    
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+            <label for="radio6" class="manual-btn"></label>
+    
+    
+        </div>
+    
+    
+        
+    </div>
+    
 </body>
 </html>
