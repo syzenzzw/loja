@@ -1,6 +1,33 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1080px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.cabecalho1 {
+    background-color: #000000;
+    width: 100%;
+
+}
+
+.logo,.sociais {
+    width: 25%;
+
+
+}
+
+.menu {
+    width: 50%;
+
 }
 
 #cardproduto {
@@ -61,6 +88,7 @@ body{
     height: 250px;
     border-radius: 12px;
     box-shadow: 4px 4px 12px #aaaa;
+    
 }
 .card img {
     width: 100%;
@@ -96,5 +124,7 @@ body{
     font-weight: bold;
     border-radius: 15px;
 }
+
+
 
 
