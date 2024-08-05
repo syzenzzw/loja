@@ -1,3 +1,4 @@
+
 var total = 0
 
 function comprarOleo() {
@@ -156,4 +157,6 @@ function comprarCaixa() {
     
     document.getElementById('valortotal').innerHTML = "Total : R$ " + total
 }
+
+
 
