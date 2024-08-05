@@ -12,7 +12,5 @@ function comprarOleo() {
     document.getElementById('valortotal').innerHTML = "Total : R$ " + total
 }
 
-function show() {
-    alert("Comprou!")
-}
+
 

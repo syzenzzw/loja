@@ -9,34 +9,30 @@
     display: flex;
     align-items: center;
     justify-content: center;
-   
     margin: 0 auto;
     
-    
-    
-
 }
 
 header {
     background-color: #000000;
-    width: 100%;
-  
-    
+    width: 100%;        
+}
 
+header .logo {
+    left: 10%;
+   
 
-    
 }
 
 .sociais, .logo{
     width: 25%;
 }
 
+
+
+
 .logo img{
     width: 150px;
-    
-    
-    
-    
 }
 
 
@@ -197,17 +193,20 @@ body{
     align-items: center;
     justify-content: center;
     z-index: 999;
+  
 
 }
 
 .modal {
-    width: 60%;
+    width: 35%;
     min-width: 450px;
     min-height: 200px;
     background-color: rgba(255, 255, 255, 0.562);
     backdrop-filter: blur(10px);
     padding: 50px;
     border: solid;
+    height: 28%;
+    border-radius: 20px;
 }
 
 .comprar2 {
@@ -222,7 +221,7 @@ body{
     border: 0;
     background-color: #2192ff;
     color: white;
-    
+    top: 75%;
 }
 
 .janela-modal.abrir {
@@ -247,6 +246,21 @@ body{
 .abrir .modal {
     animation: abrirmodal 0.5s;
 
+}
+
+#car {
+    position: absolute;
+    text-decoration: none;
+    margin-left: 33%;
+    top: 5px;
+    font-size: 30px;
+}
+
+#pro {
+    position: absolute;
+    left: 5%;
+    top: 25%;
+    font-size: 25px;
 }
 
 
