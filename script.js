@@ -1,35 +1,34 @@
 const galleryContainer = document.querySelector('.gallery-container');
 const galleryControlsContainer = document.querySelector('.gallery-controls');
-const galleryControls = ('previous', 'next');
+const galleryControls = ['previous', 'next'];
 const galleryItems = document.querySelectorAll('.gallery-item');
 
 class Carousel {
-    constructor(container, items, controls){
+
+    constructor(container, items, controls) {
         this.carouselContainer = container;
         this.carouselControls = controls;
-        this.carouselArray = [...items]
-        
+        this.carouselArray = [...items];
+        this.currentIndex = 0; // Adiciona um índice para rastrear o item atual
+        this.updateGallery();
     }
 
-    updateGallery(){
+    updateGallery() {
+        // Remove classes de todos os itens
         this.carouselArray.forEach(el => {
-            el.classList.remove('gallery-item-1');
-            el.classList.remove('gallery-item-2');
-            el.classList.remove('gallery-item-3');
-            el.classList.remove('gallery-item-4');
-            el.classList.remove('gallery-item-5');
+            el.classList.remove('gallery-item-1', 'gallery-item-2', 'gallery-item-3', 'gallery-item-4', 'gallery-item-5');
         });
 
-        this.carouselArray.slice(0, 5).forEach((el , i) => {
-            el.classList.add('gallery-item-${i+1}');
+        // Adiciona classes aos 5 itens visíveis
+        this.carouselArray.slice(0, 5).forEach((el, i) => {
+            el.classList.add(`gallery-item-${i + 1}`);
         });
-
     }
 
-    setCurrentState(direction){
-        if (direction.className == 'gallery-controls-previous'){
+    setCurrentState(direction) {
+        if (direction === 'previous') {
             this.carouselArray.unshift(this.carouselArray.pop());
-        }else{
+        } else if (direction === 'next') {
             this.carouselArray.push(this.carouselArray.shift());
         }
         this.updateGallery();
@@ -37,28 +36,20 @@ class Carousel {
 
     setControls() {
         this.carouselControls.forEach(control => {
-            galleryControlsContainer.appendChild(document.createElement('button')).className = 'gallery-controls-${control}';
-            document.querySelectorAll('.gallery-controls-${control}').innerText = control;
-
-        })
-    }
-
-    useControls(){
-        const triggers = [...galleryControlsContainer.childNodes];
-        triggers.forEach(control => {
-            control.addEventListener('click', e => {
-                e.preventDefault();
-                this.setCurrentState(control);
-            });
+            const button = document.createElement('button');
+            button.className = `gallery-controls-${control}`;
+            button.innerText = control.charAt(0).toUpperCase() + control.slice(1); // Capitaliza a primeira letra
+            button.addEventListener('click', () => this.setCurrentState(control));
+            galleryControlsContainer.appendChild(button);
         });
     }
-
 }
 
 const exampleCarousel = new Carousel(galleryContainer, galleryItems, galleryControls);
 
-exampleCarousel.setControls();
-exampleCarousel.useControls();
+// Não é necessário chamar `useControls` aqui porque os eventos são adicionados diretamente em `setControls`
+
+
 
 
 
