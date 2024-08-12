@@ -283,11 +283,9 @@ header .logo {
 
  
 body{
-    background-image: url(pexels-txomcs-289676241-25811935.jpg  );
-    background-repeat: no-repeat; /* Isso faz com que a imagem não se repita */
-    background-size: cover; 
-    background-attachment: fixed;
-    
+    background-size: 300% 300%;
+    background: linear-gradient(45deg, #DCDCDC,#808080,#708090,#C0C0C0);
+    animation: color 12s ease-in-out infinite;
 }
 
 
@@ -327,7 +325,7 @@ body{
     color: #aaaa;
 }
 .card button {
-    background-color: #327355;
+    background-color: #2192ff;
     height: 35px;
     border: none;
     padding: 4px;
@@ -336,6 +334,7 @@ body{
     font-size: 1rem;
     font-weight: bold;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .card2  {
@@ -366,7 +365,7 @@ body{
  
 .card2 h1 {
     font-size: 1.2rem;
-    color:  #aaaa;
+    
 }
  
 .card2 h2 {
@@ -384,6 +383,7 @@ body{
     font-size: 1rem;
     font-weight: bold;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 
@@ -416,7 +416,7 @@ body{
  
 .card3 h1 {
     font-size: 1.2rem;
-    color:  #aaaa;
+    
 }
  
 .card3 h2 {
@@ -434,6 +434,7 @@ body{
     font-size: 1rem;
     font-weight: bold;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 
@@ -465,7 +466,7 @@ body{
  
 .card4 h1 {
     font-size: 1.2rem;
-    color:  #aaaa;
+    
 }
  
 .card4 h2 {
@@ -483,6 +484,7 @@ body{
     font-size: 1rem;
     font-weight: bold;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .card5  {
@@ -513,7 +515,7 @@ body{
  
 .card5 h1 {
     font-size: 1.2rem;
-    color:  #aaaa;
+    
 }
  
 .card5 h2 {
@@ -531,6 +533,7 @@ body{
     font-size: 1rem;
     font-weight: bold;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 
@@ -563,7 +566,7 @@ body{
  
 .card6 h1 {
     font-size: 1.2rem;
-    color:  #aaaa;
+    
 }
  
 .card6 h2 {
@@ -581,6 +584,7 @@ body{
     font-size: 1rem;
     font-weight: bold;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .card7  {
@@ -611,7 +615,7 @@ body{
  
 .card7 h1 {
     font-size: 1.2rem;
-    color:  #aaaa;
+    
 }
  
 .card7 h2 {
@@ -629,6 +633,7 @@ body{
     font-size: 1rem;
     font-weight: bold;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 #cam{
@@ -645,7 +650,7 @@ body{
     box-shadow: 4px 4px 12px #aaaa;
     position: absolute;
     left: 25%;
-    top: 355%;
+    top: 235%;
     
 }
 .card8 img {
@@ -665,7 +670,7 @@ body{
  
 .card8 h1 {
     font-size: 1.2rem;
-    color:  #aaaa;
+    
 }
  
 .card8 h2 {
@@ -683,6 +688,7 @@ body{
     font-size: 1rem;
     font-weight: bold;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 
@@ -694,7 +700,7 @@ body{
     box-shadow: 4px 4px 12px #aaaa;
     position: absolute;
     left: 45%;
-    top: 355%;
+    top: 235%;
     
 }
 .card9 img {
@@ -714,7 +720,7 @@ body{
  
 .card9 h1 {
     font-size: 1.2rem;
-    color:  #aaaa;
+    
 }
  
 .card9 h2 {
@@ -732,6 +738,7 @@ body{
     font-size: 1rem;
     font-weight: bold;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 
@@ -743,7 +750,7 @@ body{
     box-shadow: 4px 4px 12px #aaaa;
     position: absolute;
     left: 65%;
-    top: 355%;
+    top: 235%;
     
 }
 .card10 img {
@@ -763,7 +770,7 @@ body{
  
 .card10 h1 {
     font-size: 1.2rem;
-    color:  #aaaa;
+    
 }
  
 .card10 h2 {
@@ -781,6 +788,7 @@ body{
     font-size: 1rem;
     font-weight: bold;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .card11  {
@@ -791,7 +799,7 @@ body{
     box-shadow: 4px 4px 12px #aaaa;
     position: absolute;
     left: 55%;
-    top: 400%;
+    top: 280%;
     
 }
 .card11 img {
@@ -811,7 +819,7 @@ body{
  
 .card11 h1 {
     font-size: 1.2rem;
-    color:  #aaaa;
+    
 }
  
 .card11 h2 {
@@ -829,6 +837,7 @@ body{
     font-size: 1rem;
     font-weight: bold;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 
@@ -840,7 +849,7 @@ body{
     box-shadow: 4px 4px 12px #aaaa;
     position: absolute;
     left: 35%;
-    top: 400%;
+    top: 280%;
     
 }
 .card12 img {
@@ -860,7 +869,7 @@ body{
  
 .card12 h1 {
     font-size: 1.2rem;
-    color:  #aaaa;
+    
 }
  
 .card12 h2 {
@@ -878,95 +887,46 @@ body{
     font-size: 1rem;
     font-weight: bold;
     border-radius: 15px;
+    cursor: pointer;
 }
-
-.janela-modal {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 999;
-        
-}
-
-.janela-modal2 {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 999;
-    margin-top: 50%;
-}
-
-
-
-
-
-
-
-
 
 .modal {
-    width: 35%;
-    min-width: 450px;
-    min-height: 200px;
-    background-color: rgba(255, 255, 255, 0.562);
-    backdrop-filter: blur(10px);
-    padding: 50px;
-    border: solid;
-    height: 28%;
-    border-radius: 20px;
-    position: relative;
-    
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
 }
 
-.modal2 {
-    width: 35%;
-    min-width: 450px;
-    min-height: 200px;
-    background-color: rgba(255, 255, 255, 0.562);
-    backdrop-filter: blur(10px);
-    padding: 50px;
-    border: solid;
-    height: 28%;
-    border-radius: 20px;
-    position: relative;
-    
-    
-    
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
 }
 
-.comprar2 {
-    
-    position: absolute;
-    right: 10px;
-    border-radius: 10px;
-    height: 40px;
-    font-size: 15px;
-    width: 80px;
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
     cursor: pointer;
-    border: 0;
-    background-color: #2192ff;
-    color: white;
-    top: 75%;
 }
 
-.janela-modal.abrir {
-    display: flex;
-}
-
-.janela-modal2.abrir {
-    display: flex;
+#modal-image {
+    width: 100%;
 }
 
 #valortotal {
@@ -1008,6 +968,110 @@ body{
     top: 25%;
     font-size: 25px;
 }
+
+nav.menu-lateral {
+    background-color: #1C1C1C;
+    width: 80px;
+    height: 100%;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 	#4F4F4F;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+nav.menu-lateral:hover{
+     width: 300px;
+}
+
+.btn-expadir {
+    width: 100%;
+    padding-left: 10px;
+
+}
+
+.btn-expadir > i {
+    color: whitesmoke;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+
+}
+
+ul li.item-menu {
+    transition: .5s;
+}
+
+ul li.item-menu:hover {
+    background-color: gainsboro;
+}
+
+ul li.item-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    padding: 20px 4%;
+    margin-bottom: 20px;
+    line-height: 40px;
+
+}
+
+ul li.item-menu a .txt {
+    margin-left: 40px;
+}
+
+
+ul li.item-menu a .icon > i {
+    font-size: 30px;
+
+} 
+
+footer {
+    background-color: #1C1C1C;
+    font-size: 20px;
+    cursor: pointer;
+    height: 100px;
+    margin-top: 420%;
+    text-align: center;
+    align-items: center;
+    
+
+}
+
+@keyframes color {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+    
+}
+
+#motor3 {
+    height: 50px;
+    text-align: center;
+    background-color: #1C1C1C;
+    margin-top: 24% ;
+    width: 100%;
+    font-size: 30px;
+    color: whitesmoke;
+
+}
+
+
+    
+ 
 
 
 
