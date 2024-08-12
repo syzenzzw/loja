@@ -1,62 +1,23 @@
-const galleryContainer = document.querySelector('.gallery-container');
-const galleryControlsContainer = document.querySelector('.gallery-controls');
-const galleryControls = ['previous', 'next'];
-const galleryItems = document.querySelectorAll('.gallery-item');
-
-class Carousel {
-
-    constructor(container, items, controls) {
-        this.carouselContainer = container;
-        this.carouselControls = controls;
-        this.carouselArray = [...items];
-        this.currentIndex = 0; // Adiciona um índice para rastrear o item atual
-        this.updateGallery();
-    }
-
-    updateGallery() {
-        // Remove classes de todos os itens
-        this.carouselArray.forEach(el => {
-            el.classList.remove('gallery-item-1', 'gallery-item-2', 'gallery-item-3', 'gallery-item-4', 'gallery-item-5');
-        });
-
-        // Adiciona classes aos 5 itens visíveis
-        this.carouselArray.slice(0, 5).forEach((el, i) => {
-            el.classList.add(`gallery-item-${i + 1}`);
-        });
-    }
-
-    setCurrentState(direction) {
-        if (direction === 'previous') {
-            this.carouselArray.unshift(this.carouselArray.pop());
-        } else if (direction === 'next') {
-            this.carouselArray.push(this.carouselArray.shift());
-        }
-        this.updateGallery();
-    }
-
-    setControls() {
-        this.carouselControls.forEach(control => {
-            const button = document.createElement('button');
-            button.className = `gallery-controls-${control}`;
-            button.innerText = control.charAt(0).toUpperCase() + control.slice(1); // Capitaliza a primeira letra
-            button.addEventListener('click', () => this.setCurrentState(control));
-            galleryControlsContainer.appendChild(button);
-        });
-    }
-}
-
-const exampleCarousel = new Carousel(galleryContainer, galleryItems, galleryControls);
-
-// Não é necessário chamar `useControls` aqui porque os eventos são adicionados diretamente em `setControls`
-
-
-
-
-
-
-
 
 var total = 0
+
+
+let count = 1;
+
+
+setInterval(nextSlide, 3500);
+
+
+function nextSlide() {
+    count++;
+    if (count > 6) {  
+        count = 1;
+    }
+    document.getElementById("radio" + count).checked = true;  
+}
+
+
+
 
 function comprarOleo() {
     total = total + 20
@@ -143,15 +104,6 @@ function comprarBicoInjetor() {
     
     document.getElementById('valortotal').innerHTML = "Total : R$ " + total
 }
-
-
-
-
-
-
-
-
-
 
 //cambio
 
